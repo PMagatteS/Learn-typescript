@@ -6,10 +6,10 @@ let num: number;
 num = 23;
 let bool: boolean;
 bool = true
-let arr: (number|string)[] = [];
+let arr: (number|string|boolean)[] = [];
 arr = [2, "An array with a string annd a number"]
 let obj: {name: string, age: number};
-// obj = {name: "john", age: 48}
+obj = {name: "john", age: 48};
 
 
 
@@ -18,8 +18,11 @@ let obj: {name: string, age: number};
 let str2: "String value";
 let num2: 23;
 let bool2: true;
-let arr2: [2, "An array with a string annd a number"];
-let obj2: {name: "jonh", age: 48};
+let arr2 = [2, "An array with a string annd a number"];
+let obj2 = {name: "jonh", age: 48};
+
+
+
 
 
 // Any type
