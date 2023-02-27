@@ -14,3 +14,7 @@ let tuple2: readonly [number, string, boolean] = [5, 'A string', true];
 let tuple3: [string, string] = ["Hello ", "World"];
 let [hello, world] = tuple3;
 console.log(hello, world);
+
+// We can have optional value in tuples as well
+const tuple4: [string, Number, boolean?] = ["Hello world", 12]
+tuple4[2] = false
