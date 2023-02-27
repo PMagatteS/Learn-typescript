@@ -33,3 +33,13 @@ anything = "A string";
 anything = false;
 anything = [12, "Another string"];
 anything= {name: "john", age: 34}
+
+// Optional keys or value
+// We can have optional keys objects by following a key with a question mark
+const optionalKeys :{
+    name: string,
+    age?: number,
+    isHuman?: boolean
+}={
+    name:"Max"
+}
