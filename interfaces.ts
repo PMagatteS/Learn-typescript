@@ -1,4 +1,4 @@
-// Interfaces are similar to alias except they can only be apply to object type
+// Interfaces are similar to alias except they can only be apply to object type(functions, arrays, objet literals)
 // We can use optional keys and readonly keyword as well
 
 interface PersonId {
