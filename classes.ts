@@ -99,5 +99,23 @@ class John extends Person{
 const john = new John("John", 28)
 john.tellAge()
 
+// Classes shorthand
 
+class Animal{
+    // With public keyword the argument are accessible in method and inheritance
+    constructor(public name:string, public race:string){}
+    getRace(){
+        console.log(this.race);        
+    }
+}
+
+class Dog extends Animal{
+    constructor(name:string, race:string, age:number, color:string){
+        super(name, race)
+    }
+    getName(){
+        // Member is still accessible here
+        console.log(this.name);
+    }
+}
 export{}
