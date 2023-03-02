@@ -67,4 +67,37 @@ user2.log()
 // Can access to static member
 console.log(AdvencedUserData.greeting);
 
+// Abstract keyword: We cannot crate an instance of an abstract class
+abstract class Person{
+    name:string
+    age:number
+    constructor(name: string, age: number){
+        this.name = name
+        this.age = age
+    }
+}
+
+// Cannot create an instance of an abstract class
+// const john = new Person
+
+class John extends Person{
+    ethnicity: string|undefined;
+    constructor(name:string, age:number, ethnicity?: string|undefined){
+        super(name, age)
+        if(ethnicity){
+            this.ethnicity = ethnicity
+        }
+
+        
+    }
+
+    tellAge(){
+        console.log(this.age);        
+    }
+}
+
+const john = new John("John", 28)
+john.tellAge()
+
+
 export{}
