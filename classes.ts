@@ -122,4 +122,16 @@ class Dog extends Animal{
         console.log(`${this.name} is a ${this.race}`);
     }
 }
+
+// Interface we can also create interfaces for classes
+interface Car{
+    model: string,
+    year: number,
+}
+
+// And passes the interface with keyword implement
+
+class Bmw implements Car{
+    constructor(public model:string, public year:number, kilometers:number){}
+}
 export{}
