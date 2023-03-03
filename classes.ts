@@ -104,7 +104,7 @@ john.tellAge()
 class Animal{
     // With public keyword the argument are accessible in method and inheritance
     constructor(public name:string, public race:string){}
-    getRace(){
+    getRace(): void{
         console.log(this.race);        
     }
 }
@@ -116,6 +116,10 @@ class Dog extends Animal{
     getName(){
         // Member is still accessible here
         console.log(this.name);
+    }
+    // Override keyword: We can replace a parent class member with the same name
+    override getRace(): void {
+        console.log(`${this.name} is a ${this.race}`);
     }
 }
 export{}
