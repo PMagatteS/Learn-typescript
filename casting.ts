@@ -26,16 +26,18 @@ console.log(uniqueInput?.value);
 // console.log(uniqueInput.value);
 
 // When it comes to selector like classes or ids the infered types  of 'uniqueInput2' are 'Element | null'
-const Input1 = document.querySelector('.myInput')
+const input1 = document.querySelector('.myInput')
 // This give us the error "Property 'value' does not exist on type 'Element' "
 // console.log(uniqueInput2?.value);
 
 // We can cast a type to avoid the errors and access to all properties
-const uniqueInput2 = document.querySelector('.myInput') as HTMLInputElement;
-console.log(uniqueInput2.value);
+const input2 = document.querySelector('.myInput') as HTMLInputElement;
+// Or
+// const input2 = <HTMLInputElement>document.querySelector('.myInput');
+console.log(input2.value);
 
-const uniqueInput3 = document.querySelector('.myInput');
-console.log((<HTMLInputElement>uniqueInput3).value);
+const input3 = document.querySelector('.myInput');
+console.log((<HTMLInputElement>input3).value);
 
 
 export{}
